@@ -1,9 +1,9 @@
 #!/bin/bash
 if  [ -e /etc/ httpd}; then comment here
-exit 0                            # onother comment here
- fi                               # closes the if statement
- yum -y install httpd mod-ssl     # instal apache and ssl support
- systemctl start httpd            #  start Apache
- sed -i 's/^/#/g' / etc/httpd/conf.d/welcome.conf      # comment on the default welcome page
- echo "<html><h1>Hi there NTI 300</h1><body></html>"/var/www/html/index/html    # create custom welcome page
+exit 0 ;                         
+ fi                              
+ yum -y install httpd mod-ssl    
+ systemctl start httpd            
+ sed -i 's/^/#/g' / etc/httpd/conf.d/welcome.conf      
+ echo "<html><h1>Hi there NTI 300</h1><body></html>"/var/www/html/index/html   
 systemctl restart httpd         #restart apache so the changes take effect
