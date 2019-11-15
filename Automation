@@ -1,5 +1,5 @@
 #!/bin/bash
-if  [ -e /etc/ httpd}; then comment here
+if  [ -e /etc/ httpd}; then 
 exit 0 ;                         
  fi                              
  yum -y install httpd mod-ssl    
